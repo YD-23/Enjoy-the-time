@@ -1,0 +1,90 @@
+images = [
+        {"url": "/static/wakatobi dive.jpg", "title": "Wakatobi", "thumb_title": "Wakatobi", "topic": "Dive", "description": "Lorem ipsum dolor sit amet, consectetur adipisicing elit..."},
+        {"url": "/static/pulau_labengki.jpg", "title": "Pulau Labengki", "thumb_title": "Labengki", "topic": "Labengki", "description": "Lorem ipsum dolor sit amet, consectetur adipisicing elit..."},
+        {"url": "/static/rawa_aopa_watumohai.jpg", "title": "Rawa Aopa Watumohai", "thumb_title": "Aopa", "topic": "Aopa Watumohai", "description": "Lorem ipsum dolor sit amet, consectetur adipisicing elit..."},
+        {"url": "/static/benteng-keraton-buton.jpg", "title": "Benteng Keraton Buton", "thumb_title": "Benteng", "topic": "Keraton Buton", "description": "Lorem ipsum dolor sit amet, consectetur adipisicing elit..."}
+    ]
+
+
+    @app.route("/lokasi1", methods=["GET", "POST"])
+@login_required
+def lokasi1():
+        # Reach by submit form (POST)
+        if request.method == "POST":
+
+            # Get user id
+            user_id = session["user_id"]
+
+            # Initiati variabel
+            comment = request.form.get("comment")
+            rating = request.form.get("rating")
+
+            # Check if rating already existed
+            rated  = db.execute("SELECT rating FROM reviews WHERE review_id = ?", user_id)[0]["rating"]
+
+            # Condition if rating not found
+            if not rated:
+                # Alert for submit nothing
+                if not comment or not rating:
+                    flash("Belum memasukkan komentar/rating")
+                
+                # Insert data to "reviews" table
+                db.execute("INSERT INTO reviews (review_id, comment, rating, destination) VALUES (?, ?, ?, ?)", user_id, comment, rating, 1)
+            
+            # Condition if rating already exist
+            else:
+                # Alert for not comment submitted
+                if not comment:
+                    flash("Belum memasukkan komentar")
+                
+                # Insert data to "reviews" table
+                db.execute("INSERT INTO reviews (review_id, comment, rating, destination) VALUES (?, ?, ?, 1)", user_id, comment, rated)
+                
+            # Publish user comment and rating
+            reviews = db.execute("SELECT users.username, reviews.comment, reviews.rating FROM users JOIN reviews ON users.id = reviews.review_id WHERE reviews.destination = 1")
+
+            return render_template("lokasi1.html", reviews=reviews)
+               
+        else:
+            # Reach by url (GET)
+            return render_template("lokasi1.html")
+
+
+@app.route("/lokasi1", methods=["GET", "POST"])
+@login_required
+def lokasi1():
+    # Reach by submit form (POST)
+    if request.method == "POST":
+        # Get user id
+        user_id = session["user_id"]
+
+        # Inisialisasi variabel
+        comment = request.form.get("comment")
+        rating = request.form.get("rating")
+        destination = 1
+
+        # Mengecek apakah review sudah ada
+        result = db.execute("SELECT rating FROM reviews WHERE review_id = ?", (user_id,))
+        previous_rating = result[0]["rating"]
+
+        # Jika tidak ada review, tambahkan review baru
+        if not result:
+            if not comment or not rating:
+                flash("Belum memasukkan komentar/rating")
+            else:
+                db.execute("INSERT INTO reviews (review_id, comment, rating, destination) VALUES (?, ?, ?, ?)", (user_id, comment, rating, destination))
+        # Jika review sudah ada, tambahkan komentar baru
+        else:
+            if not comment:
+                flash("Belum memasukkan komentar")
+            else:
+                db.execute("INSERT INTO reviews (review_id, comment, rating, destination) VALUES (?, ?, ?, ?)", (user_id, comment, previous_rating, destination))
+
+        # Ambil data review untuk ditampilkan
+        reviews = db.execute("SELECT users.username, reviews.comment, reviews.rating FROM users JOIN reviews ON users.id = reviews.review_id WHERE reviews.destination = 1").fetchall()
+
+        return render_template("lokasi1.html", reviews=reviews)
+
+    else:
+        # Reach by url (GET)
+        return render_template("lokasi1.html")

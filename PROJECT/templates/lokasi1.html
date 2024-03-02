@@ -1,0 +1,152 @@
+{% extends "layout.html" %}
+
+{% block title %}
+    Wakatobi
+{% endblock %}
+
+{% block page_title %}
+    Taman Nasional Wakatobi
+{% endblock %}
+
+{% block carousel %}
+<!-- CAROUSEL START -->
+<div class="carousel">
+    <!-- List gambar -->
+    <div class="list">
+        <div class="item">
+            <img src="/static/lokasi1/wakatobi dive.jpg">
+        </div>
+        <div class="item">
+            <img src="/static/lokasi1/wakatobi-ikan.jpeg">
+        </div>
+        <div class="item">
+            <img src="/static/lokasi1/wakatobi-dive-resort.jpeg">
+        </div>
+        <div class="item">
+            <img src="/static/lokasi1/1.png">
+        </div>
+    </div>
+
+    <!-- list thumnail -->
+    <div class="thumbnail">
+        <div class="item">
+            <img src="/static/lokasi1/wakatobi dive.jpg">
+            <div class="content">
+                <div class="title">
+
+                </div>
+            </div>
+        </div>
+        <div class="item">
+            <img src="/static/lokasi1/wakatobi-ikan.jpeg">
+            <div class="content">
+                <div class="title">
+
+                </div>
+            </div>
+        </div>
+        <div class="item">
+            <img src="/static/lokasi1/wakatobi-dive-resort.jpeg">
+            <div class="content">
+                <div class="title">
+
+                </div>
+            </div>
+        </div>
+        <div class="item">
+            <img src="/static/lokasi1/1.png">
+            <div class="content">
+                <div class="title">
+
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Tombol next prev -->
+    <div class="arrows">
+        <button id="prev"><</button>
+                <button id="next">></button>
+    </div>
+    <!-- time running -->
+    <div class="time"></div>
+</div>
+<!--CAROUSEL END-->
+{% endblock %}
+
+{% block narasi %}
+<div class="narasi">
+    <h3 class="judul">Tentang Taman Nasional Wakatobi</h3>
+    <p> Taman Nasional Wakatobi adalah harta karun alam Indonesia yang perlu dilestarikan. Taman nasional ini memiliki luas 1,39 juta hektar sehingga menjadikannya taman laut terbesar di Indonesia. Dengan keindahan alam yang luar biasa dan keanekaragaman hayati yang tinggi, Taman Nasional Wakatobi merupakan destinasi wisata yang wajib dikunjungi bagi para pecinta alam dan laut. Wakatobi terkenal dengan keanekaragaman hayati lautnya yang luar biasa. Terdapat lebih dari 750 spesies karang, 350 spesies ikan, 400 spesies moluska, dan 600 spesies makroalga di kawasan ini. Keanekaragaman ini menjadikannya salah satu tempat terbaik di dunia untuk snorkeling dan diving.</p>
+    <p><strong>Lokasi:</strong> Taman Nasional Wakatobi terletak di Kabupaten Wakatobi, Sulawesi Tenggara.</p>
+    <p><strong>Jarak Tempuh:</strong> ± 237 km dari Kota Kendari.</p>
+    <p><strong>Daya Tarik:</strong> Taman Nasional Wakatobi menawarkan berbagai macam daya tarik bagi para pengunjung, di antaranya:</p>
+    <ul>
+        <li><strong>Keindahan bawah laut yang luar biasa:</strong> Terumbu karang yang masih terjaga, berbagai jenis ikan tropis, dan biota laut lainnya yang menakjubkan.</li>
+        <li><strong>Spot diving dan snorkeling yang terkenal:</strong> Beberapa spot terkenal di antaranya Pulau Hoga, Pulau Tomia, dan Pulau Binongko.</li>
+        <li><strong>Desa-desa tradisional Bajo:</strong> Pengunjung dapat merasakan budaya dan tradisi masyarakat Bajo yang unik.</li>
+        <li><strong>Aktivitas wisata lainnya:</strong> Berenang, trekking, kayaking, dan bird watching.</li>
+    </ul> 
+    <p><strong>Penghargaan dan Pengakuan:</strong> Taman Nasional Wakatobi telah menerima berbagai penghargaan dan pengakuan internasional, di antaranya:</p>
+    <ul>
+        <li><strong>Cagar Biosfer Dunia UNESCO:</strong> Pada tahun 2012, Wakatobi diakui sebagai Cagar Biosfer Dunia UNESCO karena keanekaragaman hayati dan budaya yang unik.</li>
+        <li><strong>Jaringan Taman Nasional Terumbu Karang Asia Tenggara: </strong> Wakatobi merupakan bagian dari Jaringan Taman Nasional Terumbu Karang Asia Tenggara (SEANET) yang bekerja sama untuk melindungi dan mengelola terumbu karang di kawasan Asia Tenggara.</li>
+    </ul>
+    <p><strong>Transportasi:</strong></p>
+    <ul>
+        <li><strong>Pesawat terbang,</strong> dari kota asal terlebih dahulu kamu dapat mencari penerbangan ke Kota Kendari, kemudian dilanjutkan dengan penerbangan ke Bandara Matahora yang terletak di Wangi-Wangi. Untuk saat ini, hanya ada satu penerbangan saja yang dioperasikan oleh Wings Air dengan lama perjalanan sekitar 45 menit dan harga tiket sekitar 1 juta rupiah.</li>
+        <li><strong>Kapal KFC Jetliner dari Kendari ke Wakatobi, </strong> dari Kendari kamu juga bisa naik kapal KFC Jetliner dengan lama perjalanan sekitar 13 jam dan harga untuk kelas ekonomi mulai dari Rp. 98.000,-</li>
+    </ul>
+
+
+</div>
+{% endblock %}
+
+<!-- komment dan rating-->
+{% block map_and_comments %}
+<div id="map_comment_container">
+    <div id="map-container">
+        <h3 id="judulmap">Temukan lokasinya di map ini</h3>
+        <iframe
+            src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3276.9550910349967!2d123.89342848829799!3d-5.776154058395358!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x2da7049a28fb6f33%3A0xdaa4c0bafdf8cf0!2sWakatobi%20Dive%20Resort!5e1!3m2!1sid!2sid!4v1708792748102!5m2!1sid!2sid"
+            width="600" height="500" style="border:solid;" allowfullscreen="" loading="lazy"
+            referrerpolicy="no-referrer-when-downgrade"></iframe>
+    </div>
+    <div id="comment-section">
+        <h2>Komentar dan Rating</h2>
+        <form id="comment-form" action="/lokasi1" method="post">
+            <div>
+                <label for="comment">Komentar:</label><br>
+                <textarea id="comment" name="comment" placeholder="Komentar" rows="4" cols="30"></textarea>
+            </div>
+            <div>
+                <label for="rating">Rating:</label><br>
+                <input type="number" id="rating" name="rating" min="1" max="5">
+            </div>
+            <div>
+                <button id="kirim" type="submit">Kirim</button>
+            </div>
+        </form>
+        <!-- Tampilkan komentar Pengunjung -->
+        <div id="comment-table">
+            <table class="table table-striped table-hover table-warning">
+                <thead>
+                    <tr>
+                        <th>User</th>
+                        <th>Komentar</th>
+                        <th>Rating</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    {% for review in reviews %}
+                    <tr>
+                        <td>{{ review.username }}</td>
+                        <td>{{ review.comment }}</td>
+                        <td>{{ review.rating }}</td>
+                    </tr>
+                    {% endfor %}
+            </table>
+        </div>
+    </div>
+</div>
+{% endblock %}

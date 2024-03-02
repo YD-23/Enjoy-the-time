@@ -1,0 +1,139 @@
+{% extends "layout.html" %}
+
+{% block title %}
+    Home
+{% endblock %}
+
+{% block page_title %}
+    PESONA SULTRA
+{% endblock %}
+
+{% block carousel %}
+ <!-- CAROUSEL START -->
+ <div class="carousel">
+  <!-- List gambar -->
+  <div class="list">
+      <div class="item">
+          <img src="/static/home/pulau-hoga.jpg">
+          <div class="content">
+              <div class="title">Taman Nasional</div>
+              <div class="topic">Wakatobi</div>
+              <div class="des">
+                  <!-- Deskripsi -->
+                  Taman Nasional Wakatobi adalah harta karun alam Indonesia yang perlu dilestarikan. Taman nasional ini memiliki luas 1,39 juta hektar sehingga menjadikannya taman laut terbesar di Indonesia.
+              </div>
+              <div class="buttons">
+                  <button><a href="/lokasi1">DETAIL</a></button>
+              </div>
+          </div>
+      </div>
+      <div class="item">
+          <img src="/static/home/pulau_labengki.jpg">
+          <div class="content">
+              <div class="title">Pulau</div>
+              <div class="topic">Labengki</div>
+              <div class="des">
+                Pulau Labengki adalah destinasi wisata yang ideal bagi para pecinta alam dan ketenangan. Keindahan alam yang masih alami dan berbagai aktivitas wisata yang menarik menjadikan pulau ini sebagai mutiara tersembunyi di Timur Indonesia yang patut dikunjungi. 
+              </div>
+              <div class="buttons">
+                <button><a href="/lokasi2">DETAIL</a></button>
+              </div>
+          </div>
+      </div>
+      <div class="item">
+          <img src="/static/home/moramo.jpg">
+          <div class="content">
+              <div class="title">Air Terjun</div>
+              <div class="topic">Moramo</div>
+              <div class="des">
+                Air Terjun Moramo adalah destinasi wisata yang ideal bagi para pecinta alam dan ketenangan. Keindahan alam yang masih alami dan berbagai aktivitas wisata yang menarik menjadikan air terjun ini sebagai surga tersembunyi di Sulawesi Tenggara yang patut dikunjungi. 
+              </div>
+              <div class="buttons">
+                <button><a href="/lokasi3">DETAIL</a></button>
+              </div>
+          </div>
+      </div>
+      <div class="item">
+          <img src="/static/home/benteng-keraton-buton.jpg">
+          <div class="content">
+              <div class="title">Benteng</div>
+              <div class="topic">Keraton Buton</div>
+              <div class="des">
+                Benteng Keraton Buton adalah destinasi wisata yang ideal bagi para pecinta sejarah dan budaya. Benteng ini menawarkan berbagai macam daya tarik, mulai dari pemandangan yang indah hingga benda-benda bersejarah.
+              </div>
+              <div class="buttons">
+                <button><a href="/lokasi4">DETAIL</a></button>
+              </div>
+          </div>
+      </div>
+      <div class="item">
+        <img src="/static/home/masjid.jpg">
+        <div class="content">
+            <div class="title">Benteng</div>
+            <div class="topic">Keraton Buton</div>
+            <div class="des">
+                Masjid Al-Alam Kendari adalah destinasi wisata religi yang ideal bagi umat Islam. Masjid ini menawarkan berbagai macam daya tarik, mulai dari arsitektur yang megah hingga suasana yang tenang dan damai.
+            </div>
+            <div class="buttons">
+              <button><a href="/lokasi5">DETAIL</a></button>
+            </div>
+        </div>
+    </div>
+  </div>
+  <!-- list thumnail -->
+  <div class="thumbnail">
+      <div class="item">
+          <img src="/static/home/pulau-hoga.jpg">
+          <div class="content">
+              <div class="title">
+                  Wakatobi
+              </div>
+          </div>
+      </div>
+      <div class="item">
+          <img src="/static/home/pulau_labengki.jpg">
+          <div class="content">
+              <div class="title">
+                  Labengki
+              </div>
+          </div>
+      </div>
+      <div class="item">
+          <img src="/static/home/moramo.jpg">
+          <div class="content">
+              <div class="title">
+                  Moramo
+              </div>
+          </div>
+      </div>
+      <div class="item">
+          <img src="/static/home/benteng-keraton-buton.jpg">
+          <div class="content">
+              <div class="title">
+                  Keraton
+              </div>
+          </div>
+      </div>
+      <div class="item">
+        <img src="/static/home/masjid.jpg">
+        <div class="content">
+            <div class="title">
+                Al-Alam
+            </div>
+        </div>
+    </div>
+  </div>
+
+  <!-- Tombol next prev -->
+  <div class="arrows">
+      <button id="prev"><</button>
+              <button id="next">></button>
+  </div>
+  <!-- time running -->
+  <div class="time"></div>
+</div>
+<!--CAROUSEL END-->
+{% endblock %}
+
+
+

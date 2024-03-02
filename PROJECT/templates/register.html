@@ -1,0 +1,28 @@
+{% extends "layout.html" %}
+
+{% block title %}
+    REGISTER
+{% endblock %}
+
+{% block page_title %}
+    REGISTER
+{% endblock %}
+
+{% block content %}
+<form action="/register" method="post" class="mx-auto w-auto">
+    <div class="mb-3">
+        <input autocomplete="off" autofocus class="form-control mx-auto w-auto" id="username" name="username"
+            placeholder="Username" type="text">
+    </div>
+    <div class="mb-3">
+        <input class="form-control mx-auto w-auto" id="password" name="password" placeholder="Password" type="password">
+    </div>
+    <div class="mb-3">
+        <input class="form-control mx-auto w-auto" id="confirmation" name="confirmation"
+            placeholder="Ketik ulang password" type="password">
+    </div>
+    <div class="mb-3">
+        <button class="btn btn-primary" type="submit">Register</button>
+    </div>
+</form>
+{% endblock %}

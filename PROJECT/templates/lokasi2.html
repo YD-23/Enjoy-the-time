@@ -1,0 +1,156 @@
+{% extends "layout.html" %}
+
+{% block title %}
+    Pulau Labengki
+{% endblock %}
+
+{% block page_title %}
+    Pulau Labengki
+{% endblock %}
+
+{% block carousel %}
+ <!-- CAROUSEL START -->
+ <div class="carousel">
+  <!-- List gambar -->
+  <div class="list">
+      <div class="item">
+          <img src="/static/lokasi2/1.jpeg">
+      </div>
+      <div class="item">
+          <img src="/static/lokasi2/pulau_labengki.jpg">
+      </div>
+      <div class="item">
+          <img src="/static/lokasi2/labengki 3.jpeg">
+      </div>
+      <div class="item">
+          <img src="/static/lokasi2/3.jpeg">
+      </div>
+  </div>
+
+   <!-- list thumnail -->
+   <div class="thumbnail">
+    <div class="item">
+        <img src="/static/lokasi2/1.jpeg">
+        <div class="content">
+            <div class="title">
+                
+            </div>
+        </div>
+    </div>
+    <div class="item">
+        <img src="/static/lokasi2/pulau_labengki.jpg">
+        <div class="content">
+            <div class="title">
+                
+            </div>
+        </div>
+    </div>
+    <div class="item">
+        <img src="/static/lokasi2/labengki 3.jpeg">
+        <div class="content">
+            <div class="title">
+                
+            </div>
+        </div>
+    </div>
+    <div class="item">
+        <img src="/static/lokasi2/3.jpeg">
+        <div class="content">
+            <div class="title">
+                
+            </div>
+        </div>
+    </div>
+</div>
+
+  <!-- Tombol next prev -->
+  <div class="arrows">
+      <button id="prev"><</button>
+              <button id="next">></button>
+  </div>
+  <!-- time running -->
+  <div class="time"></div>
+ </div>
+<!--CAROUSEL END-->
+{% endblock %}
+
+{% block narasi %}
+    <div class="narasi">
+        <h3 class="judul">Tentang Pulau Labengki</h3>
+        <p> Pulau Labengki adalah destinasi wisata yang ideal bagi para pecinta alam dan ketenangan. Keindahan alam yang masih alami dan berbagai aktivitas wisata yang menarik menjadikan pulau ini sebagai mutiara tersembunyi di Timur Indonesia yang patut dikunjungi. Pulau Labengki menawarkan keindahan alam yang luar biasa, dengan pantai berpasir putih, air laut biru jernih, dan gugusan pulau karst yang menawan. Pemandangan bawah lautnya pun tak kalah indah, dengan terumbu karang yang masih terjaga dan berbagai jenis ikan tropis yang berwarna-warni.</p>
+        <p><strong>Lokasi:</strong> Pulau Labengki terletak di Kecamatan Lasolo Kepulauan, Kabupaten Konawe Utara, Sulawesi Tenggara. </p>
+        <p><strong>Jarak Tempuh:</strong> ± 58,8 km dari Kota Kendari </p>
+        <p><strong>Daya Tarik:</strong> Pulau Labengki menawarkan berbagai macam daya tarik bagi para pengunjung, di antaranya:</p>
+        <ul>
+            <li><strong>Pantai yang indah:</strong> Pantai Pasir Panjang, Pantai Labengki, dan Pantai Tinondo merupakan beberapa pantai yang terkenal di pulau ini.</li>
+            <li><strong>Spot snorkeling dan diving yang menarik:</strong> Pulau Labengki memiliki banyak spot snorkeling dan diving yang ideal untuk melihat keindahan bawah laut.</li>
+            <li><strong>Gua alam yang unik:</strong> Pulau Labengki memiliki beberapa gua alam yang dapat dijelajahi, seperti Gua Kelelawar dan Gua Batu Kapur.</li>
+            <li><strong>Bukit Cinta:</strong> Bukit ini menawarkan pemandangan panorama yang indah dari atas pulau.</li>
+            <li><strong>Hutan tropis yang masih alami:</strong> Pulau Labengki memiliki hutan tropis yang masih alami dengan berbagai jenis flora dan fauna yang unik.</li>
+        </ul> 
+        <p><strong>Aktivitas Wisata:</strong> Pengunjung dapat melakukan berbagai aktivitas wisata di Pulau Labengki, seperti:</p>
+        <ul>
+            <li>Berenang, berjemur, dan bermain air di pantai.</li>
+            <li>Snorkeling dan diving untuk melihat keindahan bawah laut.</li>
+            <li>Menjelajahi gua alam.</li>
+            <li>Mendaki Bukit Cinta untuk menikmati pemandangan panorama.</li>
+            <li>Trekking di hutan tropis.</li>
+            <li>Bersepeda keliling pulau.</li>
+            <li>Berkemah di tepi pantai.</li>
+            <li>Menikmati kuliner khas Pulau Labengki.</li>
+          </ul>
+        <p><strong>Transportasi:</strong> Pulau ini dapat diakses dengan perahu motor dari Kendari atau Kolaka selama 2-3 jam.</p>
+        <p><strong>Fasilitas:</strong> Fasilitas di Pulau Labengki masih tergolong terbatas. Pengunjung dapat menemukan beberapa homestay dan warung makan di pulau ini.</p>
+    
+    </div>
+{% endblock %}
+
+<!-- komment dan rating-->
+{% block map_and_comments %}
+<div id="map_comment_container">
+    <div id="map-container">
+        <h3 id="judulmap">Temukan lokasinya di map ini</h3>
+        <iframe src="https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d4400.5443592799165!2d122.46414335994457!3d-3.482840236453117!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x2d990c6068791359%3A0x91ecffeae9b5364e!2sLabengki%20Beach%20Hut!5e1!3m2!1sid!2sid!4v1709304226266!5m2!1sid!2sid" 
+        width="600" height="500" style="border:solid;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+    </div>
+    <div id="comment-section">
+        <h2>Komentar dan Rating</h2>
+        <form id="comment-form" action="/lokasi2" method="post">
+            <div>
+                <label for="comment">Komentar:</label><br>
+                <textarea id="comment" name="comment" rows="4" cols="30"></textarea>
+            </div>
+            <div>
+                <label for="rating">Rating:</label><br>
+                <input type="number" id="rating" name="rating" min="1" max="5">
+            </div>
+            <div>
+                <button type="submit">Kirim</button>
+            </div>
+        </form>
+        <!-- Tampilkan komentar Pengunjung -->
+        <div id="comment-table">
+            <table class="table table-striped table-hover table-warning">
+                <thead>
+                    <tr>
+                        <th>User</th>
+                        <th>Komentar</th>
+                        <th>Rating</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    {% for review in reviews %}
+                    <tr>
+                        <td>{{ review.username }}</td>
+                        <td>{{ review.comment }}</td>
+                        <td>{{ review.rating }}</td>
+                    </tr>
+                    {% endfor %}
+            </table>
+        </div>
+    </div>
+</div>
+{% endblock %}
+
+
+

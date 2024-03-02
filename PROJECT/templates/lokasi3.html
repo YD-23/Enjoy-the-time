@@ -1,0 +1,173 @@
+{% extends "layout.html" %}
+
+{% block title %}
+Moramo
+{% endblock %}
+
+{% block page_title %}
+Air Terjun Moramo
+{% endblock %}
+
+{% block carousel %}
+<!-- CAROUSEL START -->
+<div class="carousel">
+    <!-- List gambar -->
+    <div class="list">
+        <div class="item">
+            <img src="/static/lokasi3/3.jpg">
+        </div>
+        <div class="item">
+            <img src="/static/lokasi3/5.jpg">
+        </div>
+        <div class="item">
+            <img src="/static/lokasi3/4.jpg">
+        </div>
+        <div class="item">
+            <img src="/static/lokasi3/6.jpg">
+        </div>
+    </div>
+
+    <!-- list thumnail -->
+    <div class="thumbnail">
+        <div class="item">
+            <img src="/static/lokasi3/3.jpg">
+            <div class="content">
+                <div class="title">
+
+                </div>
+            </div>
+        </div>
+        <div class="item">
+            <img src="/static/lokasi3/5.jpg">
+            <div class="content">
+                <div class="title">
+
+                </div>
+            </div>
+        </div>
+        <div class="item">
+            <img src="/static/lokasi3/4.jpg">
+            <div class="content">
+                <div class="title">
+
+                </div>
+            </div>
+        </div>
+        <div class="item">
+            <img src="/static/lokasi3/6.jpg">
+            <div class="content">
+                <div class="title">
+
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Tombol next prev -->
+    <div class="arrows">
+        <button id="prev">
+            <</button>
+                <button id="next">></button>
+    </div>
+    <!-- time running -->
+    <div class="time"></div>
+</div>
+<!--CAROUSEL END-->
+{% endblock %}
+
+{% block narasi %}
+<div class="narasi">
+    <h3 class="judul">Tentang Air Terjun Moramo</h3>
+    <p class="content">Air Terjun Moramo adalah destinasi wisata yang ideal bagi para pecinta alam dan ketenangan.
+        Keindahan alam yang masih alami dan berbagai aktivitas wisata yang menarik menjadikan air terjun ini sebagai
+        surga tersembunyi di Sulawesi Tenggara yang patut dikunjungi. Air Terjun Moramo menawarkan keindahan alam yang
+        luar biasa. Air terjun ini terdiri dari tujuh tingkatan dengan ketinggian total mencapai 100 meter. Airnya yang
+        jernih dan segar mengalir di antara bebatuan dan pepohonan yang rimbun, menciptakan pemandangan yang sangat
+        menyejukkan mata.</p>
+    <p><strong>Lokasi:</strong> Air Terjun Moramo terletak di Desa Sumber Sari, Kecamatan Moramo, Kabupaten Konawe
+        Selatan, Sulawesi Tenggara.</p>
+    <p><strong>Jarak Tempuh:</strong> ± 68,3 km dari Kota Kendari</p>
+    <p><strong>Daya Tarik:</strong> Air Terjun Moramo menawarkan berbagai macam daya tarik bagi para pengunjung, di
+        antaranya:</p>
+    <ul>
+        <li>Tujuh tingkatan air terjun: Setiap tingkatan memiliki keunikan dan keindahannya sendiri.</li>
+        <li>Kolam alami: Pengunjung dapat berenang dan bermain air di kolam alami yang terdapat di bawah air terjun.
+        </li>
+        <li>Jembatan gantung: Pengunjung dapat menikmati pemandangan air terjun dari atas jembatan gantung yang
+            tersedia.</li>
+        <li>Trekking: Pengunjung dapat melakukan trekking di sekitar air terjun untuk menikmati keindahan alam yang
+            masih alami.</li>
+        <li>Fotografi: Air Terjun Moramo adalah tempat yang ideal untuk mengambil foto-foto yang indah.</li>
+    </ul>
+
+    <p><strong>Aktivitas Wisata:</strong> Pengunjung dapat melakukan berbagai aktivitas wisata di Air Terjun Moramo,
+        seperti:</p>
+    <ul>
+        <li>Berenang di kolam alami.</li>
+        <li>Bermain air di bawah air terjun.</li>
+        <li>Berjalan kaki di atas jembatan gantung.</li>
+        <li>Trekking di sekitar air terjun.</li>
+        <li>Mengambil foto-foto yang indah.</li>
+    </ul>
+
+    <p><strong>Fasilitas:</strong> Fasilitas di Air Terjun Moramo masih tergolong terbatas. Pengunjung dapat menemukan
+        beberapa warung makan dan toilet di sekitar air terjun.</p>
+
+    <p><strong>Transportasi:</strong> Air terjun ini dapat diakses dengan kendaraan roda dua atau roda empat dari
+        Kendari selama kurang lebih 4-5 jam.</p>
+
+    <p><strong>Informasi Tambahan:</strong></p>
+    <ul>
+        <li>Harga tiket masuk: Rp. 25.000 per orang</li>
+        <li>Jam buka: 08.00 - 18.00 WITA</li>
+    </ul>
+</div>
+{% endblock %}
+
+<!-- komment dan rating-->
+{% block map_and_comments %}
+<div id="map_comment_container">
+    <div id="map-container">
+        <h3 id="judulmap">Temukan lokasinya di map ini</h3>
+        <iframe src="https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d21527.379145871382!2d122.73025875962702!3d-4.219196155404707!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x2d989f0cda33990b%3A0xab7ce4a2c20de727!2sAir%20Terjun%20Moramo!5e1!3m2!1sid!2sid!4v1709304759418!5m2!1sid!2sid" 
+        width="600" height="500" style="border:solid;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+    </div>
+    <div id="comment-section">
+        <h2>Komentar dan Rating</h2>
+        <form id="comment-form" action="/lokasi3" method="post">
+            <div>
+                <label for="comment">Komentar:</label><br>
+                <textarea id="comment" name="comment" rows="4" cols="30"></textarea>
+            </div>
+            <div>
+                <label for="rating">Rating:</label><br>
+                <input type="number" id="rating" name="rating" min="1" max="5">
+            </div>
+            <div>
+                <button type="submit">Kirim</button>
+            </div>
+        </form>
+
+        <!-- Tampilkan komentar Pengunjung -->
+        <div id="comment-table">
+            <table class="table table-striped table-hover table-warning">
+                <thead>
+                    <tr>
+                        <th>User</th>
+                        <th>Komentar</th>
+                        <th>Rating</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    {% for review in reviews %}
+                    <tr>
+                        <td>{{ review.username }}</td>
+                        <td>{{ review.comment }}</td>
+                        <td>{{ review.rating }}</td>
+                    </tr>
+                    {% endfor %}
+            </table>
+        </div>
+    </div>
+</div>
+{% endblock %}

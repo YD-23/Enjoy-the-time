@@ -1,0 +1,188 @@
+{% extends "layout.html" %}
+
+{% block title %}
+Masjid
+{% endblock %}
+
+{% block page_title %}
+Masjid Al-Alam
+{% endblock %}
+
+{% block carousel %}
+<!-- CAROUSEL START -->
+<div class="carousel">
+    <!-- List gambar -->
+    <div class="list">
+        <div class="item">
+            <img src="/static/lokasi5/1.jpg">
+        </div>
+        <div class="item">
+            <img src="/static/lokasi5/2.png">
+        </div>
+        <div class="item">
+            <img src="/static/lokasi5/6.jpg">
+        </div>
+        <div class="item">
+            <img src="/static/lokasi5/8.jpg">
+        </div>
+    </div>
+
+    <!-- list thumnail -->
+    <div class="thumbnail">
+        <div class="item">
+            <img src="/static/lokasi5/1.jpg">
+            <div class="content">
+                <div class="title">
+
+                </div>
+            </div>
+        </div>
+        <div class="item">
+            <img src="/static/lokasi5/2.png">
+            <div class="content">
+                <div class="title">
+
+                </div>
+            </div>
+        </div>
+        <div class="item">
+            <img src="/static/lokasi5/6.jpg">
+            <div class="content">
+                <div class="title">
+
+                </div>
+            </div>
+        </div>
+        <div class="item">
+            <img src="/static/lokasi5/8.jpg">
+            <div class="content">
+                <div class="title">
+
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Tombol next prev -->
+    <div class="arrows">
+        <button id="prev">
+            <</button>
+                <button id="next">></button>
+    </div>
+    <!-- time running -->
+    <div class="time"></div>
+</div>
+<!--CAROUSEL END-->
+{% endblock %}
+
+{% block narasi %}
+<div class="narasi">
+    <h3 class="judul">Tentang Masjid Al-Alam</h3>
+    <p class="content">Masjid Al-Alam Kendari adalah destinasi wisata religi yang ideal bagi umat Islam. Masjid ini
+        menawarkan berbagai macam daya tarik, mulai dari arsitektur yang megah hingga suasana yang tenang dan damai.
+        Masjid Al-Alam Kendari adalah tempat yang tepat untuk beribadah, menenangkan diri, dan belajar tentang Islam.
+        Masjid Al-Alam Kendari diprakarsai oleh gubernur Sulawesi Tenggara saat itu, Nur Alam dan diresmikan pada tahun
+        2018.</p>
+    <p><strong>Lokasi:</strong> Masjid Al-Alam Kendari terletak di Teluk Kendari, Sulawesi Tenggara.</p>
+
+    <p><strong>Jarak Tempuh:</strong> ± 27,5 km dari Bandara Halu Oleo.</p>
+
+    <p><strong>Keunikan:</strong> Masjid Al-Alam Kendari memiliki beberapa keunikan, di antaranya:</p>
+    <ul>
+        <li>Masjid terapung terbesar di Asia Tenggara: Masjid ini dibangun di atas laut dengan luas total 12.674 meter
+            persegi.</li>
+        <li>Arsitektur yang megah: Masjid ini memiliki kubah utama berwarna emas yang indah dan empat menara yang
+            menjulang tinggi.</li>
+        <li>Interior yang mewah: Masjid ini dihiasi dengan kaligrafi dan ukiran yang indah.</li>
+    </ul>
+
+    <p><strong>Daya Tarik:</strong> Masjid Al-Alam Kendari menawarkan berbagai macam daya tarik bagi para pengunjung, di
+        antaranya:</p>
+    <ul>
+        <li>Pemandangan yang indah: Pengunjung dapat menikmati pemandangan Teluk Kendari yang indah dari halaman masjid.
+        </li>
+        <li>Suasana yang tenang dan damai: Masjid ini merupakan tempat yang ideal untuk beribadah dan menenangkan diri.
+        </li>
+        <li>Kegiatan keagamaan: Masjid ini regularly mengadakan berbagai kegiatan keagamaan, seperti salat berjamaah,
+            ceramah agama, dan pengajian.</li>
+        <li>Wisata religi: Masjid ini menjadi salah satu tujuan wisata religi yang populer di Sulawesi Tenggara.</li>
+        <li>Kuliner: Di halaman masjid ini menyediakan berbagai stand kulineran yang dapat dinikmati di sore hari.</li>
+    </ul>
+
+    <p><strong>Aktivitas Wisata:</strong> Pengunjung dapat melakukan berbagai aktivitas wisata di Masjid Al-Alam
+        Kendari, seperti:</p>
+    <ul>
+        <li>Salat berjamaah</li>
+        <li>Mendengarkan ceramah agama</li>
+        <li>Mengikuti pengajian</li>
+        <li>Berfoto-foto di sekitar masjid</li>
+        <li>Menikmati pemandangan Teluk Kendari</li>
+        <li>Kulineran</li>
+    </ul>
+
+    <p><strong>Fasilitas:</strong> Masjid Al-Alam Kendari dilengkapi dengan berbagai fasilitas, seperti:</p>
+    <ul>
+        <li>Tempat parkir yang luas</li>
+        <li>Toilet</li>
+        <li>Mushola</li>
+        <li>Perpustakaan</li>
+        <li>Ruang pertemuan</li>
+    </ul>
+
+    <p><strong>Transportasi:</strong> Masjid ini mudah diakses dari berbagai penjuru kota baik menggunakan kendaraan
+        roda dua maupun roda empat.</p>
+
+    <p><strong>Informasi Tambahan:</strong></p>
+    <ul>
+        <li>Jam buka: 24 jam</li>
+        <li>Tiket masuk: Gratis</li>
+    </ul>
+</div>
+{% endblock %}
+
+<!-- komment dan rating-->
+{% block map_and_comments %}
+<div id="map_comment_container">
+    <div id="map-container">
+        <h3 id="judulmap">Temukan lokasinya di map ini</h3>
+        <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3342.7475961600485!2d122.544213!3d-3.97885!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x2d98ed3d696549af%3A0x3452c218c3d0df41!2sMasjid%20Al-Alam!5e1!3m2!1sid!2sid!4v1709307556132!5m2!1sid!2sid" 
+        width="600" height="500" style="border:solid;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+    </div>
+    <div id="comment-section">
+        <h2>Komentar dan Rating</h2>
+        <form id="comment-form" action="/lokasi5" method="post">
+            <div>
+                <label for="comment">Komentar:</label><br>
+                <textarea id="comment" name="comment" rows="4" cols="30"></textarea>
+            </div>
+            <div>
+                <label for="rating">Rating:</label><br>
+                <input type="number" id="rating" name="rating" min="1" max="5">
+            </div>
+            <div>
+                <button type="submit">Kirim</button>
+            </div>
+        </form>
+        <!-- Tampilkan komentar Pengunjung -->
+        <div id="comment-table">
+            <table class="table table-striped table-hover table-warning">
+                <thead>
+                    <tr>
+                        <th>User</th>
+                        <th>Komentar</th>
+                        <th>Rating</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    {% for review in reviews %}
+                    <tr>
+                        <td>{{ review.username }}</td>
+                        <td>{{ review.comment }}</td>
+                        <td>{{ review.rating }}</td>
+                    </tr>
+                    {% endfor %}
+            </table>
+        </div>
+    </div>
+</div>
+{% endblock %}

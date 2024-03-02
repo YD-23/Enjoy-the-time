@@ -1,0 +1,188 @@
+{% extends "layout.html" %}
+
+{% block title %}
+Benteng
+{% endblock %}
+
+{% block page_title %}
+Benteng Keraton Buton
+{% endblock %}
+
+{% block carousel %}
+<!-- CAROUSEL START -->
+<div class="carousel">
+    <!-- List gambar -->
+    <div class="list">
+        <div class="item">
+            <img src="/static/lokasi4/1.jpg">
+        </div>
+        <div class="item">
+            <img src="/static/lokasi4/2.jpg">
+        </div>
+        <div class="item">
+            <img src="/static/lokasi4/5.jpg">
+        </div>
+        <div class="item">
+            <img src="/static/lokasi4/4.jpg">
+        </div>
+    </div>
+
+    <!-- list thumnail -->
+    <div class="thumbnail">
+        <div class="item">
+            <img src="/static/lokasi4/1.jpg">
+            <div class="content">
+                <div class="title">
+
+                </div>
+            </div>
+        </div>
+        <div class="item">
+            <img src="/static/lokasi4/2.jpg">
+            <div class="content">
+                <div class="title">
+
+                </div>
+            </div>
+        </div>
+        <div class="item">
+            <img src="/static/lokasi4/5.jpg">
+            <div class="content">
+                <div class="title">
+
+                </div>
+            </div>
+        </div>
+        <div class="item">
+            <img src="/static/lokasi4/4.jpg">
+            <div class="content">
+                <div class="title">
+
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Tombol next prev -->
+    <div class="arrows">
+        <button id="prev">
+            <</button>
+                <button id="next">></button>
+    </div>
+    <!-- time running -->
+    <div class="time"></div>
+</div>
+<!--CAROUSEL END-->
+{% endblock %}
+
+{% block narasi %}
+<div class="narasi">
+    <h3 class="judul">Tentang Benteng Keraton Buton</h3>
+    <p>Benteng Keraton Buton adalah destinasi wisata yang ideal bagi para pecinta sejarah dan budaya. Benteng ini
+        menawarkan berbagai macam daya tarik, mulai dari pemandangan yang indah hingga benda-benda bersejarah. Benteng
+        Keraton Buton adalah tempat yang tepat untuk belajar tentang sejarah Kesultanan Buton dan budaya masyarakat
+        Buton. Benteng Keraton Buton dibangun pada abad ke-16 oleh Sultan Buton III, La Sangaji. Benteng ini menjadi
+        pusat pemerintahan Kesultanan Buton selama berabad-abad.</p>
+
+    <p><strong>Lokasi:</strong> Benteng Keraton Buton terletak di Kota Baubau, Sulawesi Tenggara.</p>
+
+    <p><strong>Jarak Tempuh:</strong> ± 226 km dari Kota Kendari</p>
+
+    <p><strong>Keunikan:</strong> Benteng Keraton Buton memiliki beberapa keunikan, di antaranya:</p>
+    <ul>
+        <li>Benteng terluas di dunia: Benteng ini memiliki luas 23,375 hektar dengan keliling tembok mencapai 2.740
+            meter.</li>
+        <li>Arsitektur yang kokoh: Benteng ini terbuat dari batu kapur dan memiliki 12 pintu gerbang, 17 bastion, dan 5
+            pos jaga.</li>
+        <li>Nilai sejarah yang tinggi: Benteng ini menjadi saksi bisu kejayaan Kesultanan Buton dan menyimpan banyak
+            benda bersejarah.</li>
+    </ul>
+
+    <p><strong>Daya Tarik:</strong> Benteng Keraton Buton menawarkan berbagai macam daya tarik bagi para pengunjung, di
+        antaranya:</p>
+    <ul>
+        <li>Pemandangan yang indah: Pengunjung dapat menikmati pemandangan Kota Baubau dan Teluk Buton dari atas
+            benteng.</li>
+        <li>Museum Buton: Museum ini menyimpan berbagai benda bersejarah Kesultanan Buton, seperti mahkota, keris, dan
+            naskah kuno.</li>
+        <li>Makam para Sultan Buton: Pengunjung dapat mengunjungi makam para Sultan Buton yang terletak di dalam
+            benteng.</li>
+        <li>Pertunjukan budaya: Pengunjung dapat menonton pertunjukan budaya tradisional Buton di dalam benteng.</li>
+    </ul>
+
+    <p><strong>Aktivitas Wisata:</strong> Pengunjung dapat melakukan berbagai aktivitas wisata di Benteng Keraton Buton,
+        seperti:</p>
+    <ul>
+        <li>Berjalan kaki di atas tembok benteng.</li>
+        <li>Mengunjungi Museum Buton.</li>
+        <li>Berziarah ke makam para Sultan Buton.</li>
+        <li>Menonton pertunjukan budaya tradisional Buton.</li>
+        <li>Mengambil foto-foto yang indah.</li>
+    </ul>
+
+    <p><strong>Fasilitas:</strong> Benteng Keraton Buton dilengkapi dengan berbagai fasilitas, seperti:</p>
+    <ul>
+        <li>Tempat parkir yang luas</li>
+        <li>Toilet</li>
+        <li>Mushola</li>
+        <li>Warung makan</li>
+        <li>Toko souvenir</li>
+    </ul>
+
+    <p><strong>Transportasi:</strong> Benteng ini dapat diakses dengan mudah dari berbagai penjuru kota baik menggunakan
+        kendaraan roda dua maupun roda empat.</p>
+
+    <p><strong>Informasi Tambahan:</strong></p>
+    <ul>
+        <li>Harga tiket masuk: Rp. 5.000 per orang</li>
+        <li>Jam buka: 08.00 - 18.00 WITA</li>
+    </ul>
+</div>
+{% endblock %}
+
+<!-- komment dan rating-->
+{% block map_and_comments %}
+<div id="map_comment_container">
+    <div id="map-container">
+        <h3 id="judulmap">Temukan lokasinya di map ini</h3>
+        <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3335.536939476164!2d122.60173689999998!3d-5.4750587!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x2da476cb1ad00583%3A0x8f61b1890873bf91!2sBenteng%20Keraton%20Kesultanan%20Buton%20(Negeri%20Khalifatul%20Khamis)!5e1!3m2!1sid!2sid!4v1709306024352!5m2!1sid!2sid" 
+        width="600" height="500" style="border:solid;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+    </div>
+    <div id="comment-section">
+        <h2>Komentar dan Rating</h2>
+        <form id="comment-form" action="/lokasi4" method="post">
+            <div>
+                <label for="comment">Komentar:</label><br>
+                <textarea id="comment" name="comment" rows="4" cols="30"></textarea>
+            </div>
+            <div>
+                <label for="rating">Rating:</label><br>
+                <input type="number" id="rating" name="rating" min="1" max="5">
+            </div>
+            <div>
+                <button type="submit">Kirim</button>
+            </div>
+        </form>
+        <!-- Tampilkan komentar Pengunjung -->
+        <div id="comment-table">
+            <table class="table table-striped table-hover table-warning">
+                <thead>
+                    <tr>
+                        <th>User</th>
+                        <th>Komentar</th>
+                        <th>Rating</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    {% for review in reviews %}
+                    <tr>
+                        <td>{{ review.username }}</td>
+                        <td>{{ review.comment }}</td>
+                        <td>{{ review.rating }}</td>
+                    </tr>
+                    {% endfor %}
+            </table>
+        </div>
+    </div>
+</div>
+{% endblock %}

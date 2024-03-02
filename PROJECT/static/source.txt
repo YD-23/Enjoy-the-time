@@ -1,0 +1,17 @@
+images:
+https://blog.wakatobi.com/marine-life-sightings/
+https://snorkelventure.com/tours/wakatobi-snorkel-week/
+https://www.aquaticstories.com/wp-content/uploads/2019/09/johny-vino-o9orVksWTDM-unsplash-1-scaled.jpg
+https://www.jelajahsultra.com/2019/09/spot-terbaik-pulau-labengki.html
+https://www.tripadvisor.es/Hotel_Review-g13836029-d13412629-Reviews-Labengki_Beach_Hut-Labengi_South_East_Sulawesi_Sulawesi.html#/media/13412629/307748132:p/?albumid=101&type=0&category=101
+https://getlost.id/2020/08/14/wisata-air-terjun-moramo-tak-kalah-memukau-dengan-niagara/
+https://wonderfulimages.kemenparekraf.go.id/read/823/menparekraf-apresiasi-desa-wisata-air-terjun-moramo-sultra-kembangkan-wisata-konservasi-alam
+https://rudysalam18.blogspot.com/2019/10/hikmah-saat-berkunjung-ke-masjid-al.html
+https://wonderfulimages.kemenparekraf.go.id/read/965/benteng-keraton-buton-limbo-wolio
+
+
+
+Code:
+Navbar: Bootstrap
+Image Carousel & Javascript: "Create A Slider Crazy Effects Using HTML CSS And Javascript" by Lun Dev Youtube Channel
+helpers.py: cs50 pset 9 finance
